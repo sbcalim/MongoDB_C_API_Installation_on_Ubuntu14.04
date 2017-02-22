@@ -1,14 +1,12 @@
 //Installation process:
 
-$ sudo yum install git gcc automake autoconf libtool
+$ sudo apt-get install git gcc automake autoconf libtool
 
 $ git clone https://github.com/mongodb/mongo-c-driver.git
 
 $ cd mongo-c-driver
 
-$ git checkout x.y.z  # To build a particular release
-
-$ ./autogen.sh --with-libbson=bundled
+$ sh ./autogen.sh --with-libbson=bundled
 
 $ make
 
